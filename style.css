@@ -103,6 +103,10 @@ p {
   align-items: center;
 }
 
+#header .logo {
+  height: 125px;
+}
+
 #header .content {
   padding-inline: 32px;
   margin-bottom: 170px;
@@ -124,10 +128,12 @@ p {
 
 .main-header .lead {
   margin-bottom: 65px;
+  max-width: 725px;
 }
 
 #section-a .container img {
   margin-bottom: 56px;
+  max-width: 312px;
 }
 
 #section-a .container .content p {
@@ -224,10 +230,12 @@ p {
 
 @media (min-width: 500px) {
   body {
-    width: 1439px;
+    max-width: 1439px;
     margin: 0 auto;
-    overflow-x: hidden;
+  }
 
+  main {
+    overflow-x: hidden;
   }
 
   h1,
@@ -263,25 +271,24 @@ p {
 
   #section-a {
     margin-bottom: 0;
+    
   }
 
   #section-a .container {
-    min-width: 1212px;
+    width: 1212px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-inline: 0 auto;
+    transform: translateX(-210px);
   }
 
   #section-a .container img {
-    transform: translateX(-300px);
     min-width: 752px;
-    overflow: hidden;
+    margin-right: 110px;
   }
 
   #section-a .content {
-    transform: translateX(-190px);
     margin-bottom: 100px;
+    min-width: 400px;
     text-align: left;
   }
 
@@ -352,14 +359,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 165px;
+    gap: 50px;
   }
 
   #footer div:first-child {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 135px;
+    gap: 50px;
+    
   }
 
   #footer .logo {
@@ -369,12 +377,11 @@ p {
   #footer .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
-  #footer .socials {
-    max-height: 24px;
-    gap: 24px;
+  #footer .links > * {
+    flex-basis: 110px;
+    text-align: left;
   }
 
   #footer .socials a:hover {
