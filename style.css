@@ -59,6 +59,7 @@ p {
   line-height: 30px;
   letter-spacing: 0.5px;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -68,10 +69,18 @@ p {
     inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
+.btn-primary:hover {
+  background: hsla(171, 66%, 44%, 0.76);
+}
+
 .btn-secondary {
   background: var(--light-blue);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
     inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+.btn-secondary:hover {
+  background: hsla(233, 100%, 69%, 0.76);
 }
 
 /* Header */
@@ -199,6 +208,10 @@ p {
   text-decoration: none;
 }
 
+#footer ul li a:hover {
+  color: var(--strong-cyan);
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -210,6 +223,13 @@ p {
 }
 
 @media (min-width: 500px) {
+  body {
+    width: 1439px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+  }
+
   h1,
   h2,
   h3,
@@ -226,9 +246,9 @@ p {
   }
 
   #header .content {
-    margin-top: -50px;
+    margin-top: -55px;
   }
- 
+
   .main-container {
     padding-inline: 165px;
   }
@@ -246,9 +266,23 @@ p {
   }
 
   #section-a .container {
+    min-width: 1212px;
     display: flex;
-    gap: 110px;
     align-items: center;
+    justify-content: center;
+    margin-inline: 0 auto;
+  }
+
+  #section-a .container img {
+    transform: translateX(-300px);
+    min-width: 752px;
+    overflow: hidden;
+  }
+
+  #section-a .content {
+    transform: translateX(-190px);
+    margin-bottom: 100px;
+    text-align: left;
   }
 
   #section-a .container img {
@@ -322,10 +356,10 @@ p {
   }
 
   #footer div:first-child {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 135px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 135px;
   }
 
   #footer .logo {
@@ -339,14 +373,17 @@ gap: 135px;
   }
 
   #footer .socials {
-   max-height: 24px;
-   gap: 24px;
+    max-height: 24px;
+    gap: 24px;
   }
-
 
   #footer .socials a:hover {
     cursor: pointer;
     color: var(--strong-cyan);
   }
 
+  .btn {
+    display: inline-block;
+    margin-right: 16px;
+  }
 }
