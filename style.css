@@ -64,14 +64,12 @@ p {
 .btn-primary {
   background: var(--strong-cyan);
   margin-bottom: 24px;
-  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
-    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
 .btn-secondary {
   background: var(--light-blue);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
-    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
 /* Header */
@@ -228,7 +226,7 @@ p {
   #header .content {
     margin-top: -50px;
   }
- 
+
   .main-container {
     padding-inline: 165px;
   }
@@ -318,14 +316,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 165px;
+    gap: 50px;
   }
 
   #footer div:first-child {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 135px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
   }
 
   #footer .logo {
@@ -335,18 +333,21 @@ gap: 135px;
   #footer .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  #footer .links > * {
+    flex-basis: 110px;
+    text-align: left;
+    margin-block: 0.25rem;
   }
 
   #footer .socials {
-   max-height: 24px;
-   gap: 24px;
+    max-height: 24px;
+    gap: 24px;
   }
-
 
   #footer .socials a:hover {
     cursor: pointer;
     color: var(--strong-cyan);
   }
-
 }
