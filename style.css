@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+* {
+  border: 2px solid red;
+}
+
 body {
   font-family: "Bai Jamjuree", sans-serif;
   min-height: 100vh;
@@ -444,9 +448,7 @@ p {
   }
 }
 
-@media (min-width: 1440px) {
-  
-
+@media (min-width: 1438px) {
   #section-b img {
     min-width: 812px;
     max-height: 475px;
