@@ -323,6 +323,7 @@ p {
 
   #section-a .container {
     width: 1212px;
+    max-height: 572px;
     display: flex;
     align-items: center;
     transform: translateX(-210px);
