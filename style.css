@@ -104,7 +104,6 @@ p {
   position: relative;
 }
 
-
 #header .logo {
   height: 125px;
 }
@@ -113,11 +112,8 @@ p {
   margin-bottom: 160px;
 }
 
-
-
 #header .lead {
   margin-bottom: 48px;
-
 }
 
 /* Section A */
@@ -245,28 +241,28 @@ p {
     max-width: 730px;
     margin: 0 auto;
   }
-  
+
   h1 {
     font-size: 46px;
     font-weight: 600;
     line-height: 57.5px;
     letter-spacing: -0.75;
   }
-  
+
   h2 {
     font-size: 36px;
     font-weight: 600;
     line-height: 45px;
     letter-spacing: -0.6;
   }
-  
+
   h3 {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.4;
   }
-  
+
   p {
     font-size: 18px;
     font-weight: 400;
@@ -296,21 +292,17 @@ p {
     width: 730px;
   }
 
-
   #header {
     margin-bottom: 338px;
   }
 
   .lead {
-    margin-top: 16px;
+    margin-top: 19px;
   }
-
 
   #header .content p {
     font-size: 20px;
   }
-  
-
 
   #section-a {
     margin-bottom: 0;
@@ -336,7 +328,6 @@ p {
   }
 
   #section-a .content {
-    min-width: 400px;
     text-align: left;
     padding: 68px 0 98px 0;
   }
@@ -355,16 +346,23 @@ p {
   }
 
   #section-a .container .content div:nth-child(1),
-#section-a .container .content div:nth-child(2) {
-  margin-bottom: 56px;
-}
+  #section-a .container .content div:nth-child(2) {
+    margin-bottom: 56px;
+  }
 
   #section-b {
-    margin-block: 150px 110px;
+    margin-block: 150px 161px;
   }
 
   #section-b .main-header {
     margin-bottom: 110px;
+  }
+
+  #section-b .image {
+    max-width: 812px;
+    max-height: 457px;
+    border: 2px solid red;
+    margin: 0 auto;
   }
 
   #section-c .features {
@@ -375,6 +373,10 @@ p {
     margin: 0 auto;
   }
 
+  #section-c .main-header {
+    margin-bottom: 72px;
+  }
+
   #section-c .features .feature:nth-child(2) h3,
   #section-c .features .feature:nth-child(3) h3 {
     margin-top: 50px;
@@ -382,11 +384,15 @@ p {
 
   #section-c .companies {
     display: flex;
+    justify-content: space-between;
     max-width: 1110px;
     margin: 0 auto;
     margin-block: 150px;
   }
 
+  #section-c .company + .company {
+    margin-left: 30px;
+  }
 
   #section-d {
     max-width: 730px;
