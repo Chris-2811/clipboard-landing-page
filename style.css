@@ -361,7 +361,6 @@ p {
   #section-b .image {
     max-width: 812px;
     max-height: 457px;
-    border: 2px solid red;
     margin: 0 auto;
   }
 
