@@ -443,3 +443,12 @@ p {
     padding: 13px 36px;
   }
 }
+
+@media (min-width: 1440px) {
+  
+
+  #section-b img {
+    min-width: 812px;
+    max-height: 475px;
+  }
+}
