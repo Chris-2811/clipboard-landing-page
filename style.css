@@ -346,7 +346,7 @@ p {
     line-height: 30px;
   }
 
-  #section-a .feature {
+  #section-a .feature:nth-child(1) {
     margin-bottom: 56px;
   }
 
