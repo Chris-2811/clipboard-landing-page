@@ -277,18 +277,19 @@ p {
     width: 730px;
   }
 
+
   #header {
-    margin-bottom: 340px;
+    margin-bottom: 342px;
   }
 
   .lead {
     margin-top: 16px;
   }
 
-  #header .content {
-    margin-bottom: 150px;
-  }
 
+  #header .content p {
+    font-size: 20px;
+  }
   
 
 
@@ -297,6 +298,7 @@ p {
   }
 
   #section-a .lead {
+    margin-top: 19px;
     margin-bottom: 80px;
   }
 
