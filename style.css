@@ -56,6 +56,7 @@ p {
   text-decoration: none;
   max-width: 311px;
   font-size: 18px;
+  font-weight: 600px;
   line-height: 30px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -277,7 +278,7 @@ p {
   }
 
   #header {
-    margin-bottom: 334px;
+    margin-bottom: 340px;
   }
 
   .lead {
